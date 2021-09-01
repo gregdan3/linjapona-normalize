@@ -38,7 +38,7 @@ def main():
     os.makedirs(WRITE_DIR, exist_ok=True)
     for i, image in enumerate(images):
         x, y = image._size
-        paste_into = Image.new(mode="RGB", size=(border_dim, border_dim), color="white")
+        paste_into = Image.new(mode="1", size=(border_dim, border_dim), color="white")
         paste_into.paste(image, ((border_dim - x) // 2, (border_dim - y) // 2))
         paste_into = paste_into.resize((128, 128))
         paste_into.save(os.path.join(WRITE_DIR, image_names[i]))
