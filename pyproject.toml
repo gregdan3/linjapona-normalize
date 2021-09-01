@@ -1,7 +1,7 @@
 [project]
-name = ""
-version = ""
-description = ""
+name = "linjapona-normalize"
+version = "1.0.0"
+description = "a short script to normalize all the basic linja pona glyphs to 128x128"
 authors = [
     {name = "Gregory Danielson", email = "gregory.danielson3@gmail.com"},
 ]
